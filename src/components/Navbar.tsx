@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-5 ${
         isScrolled
           ? "bg-dark-900/90 backdrop-blur-lg shadow-lg border-b border-gray-800 py-3"
           : "bg-transparent py-5"
@@ -24,10 +24,11 @@ const Navbar: React.FC = () => {
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
-          <div className="flex items-center">
-            <MessageSquareText className="h-8 w-8 text-indigo-400 mr-2" />
-            <span className="font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400">
-              Botify
+          <div className="flex items-center gap-2">
+            <img src="./logo.png" alt=""   className="h-10 w-10 rounded-full "/>
+
+            <span className="font-medium text-xl bg-clip-text text-transparent bg-gradient-to-r text-white">
+              RagOra
             </span>
           </div>
 
